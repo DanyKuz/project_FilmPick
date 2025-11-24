@@ -1,5 +1,6 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget
+from new_film import NewFilm
 
 class MenuWindow(QMainWindow):
     def __init__(self):
@@ -25,10 +26,13 @@ class MenuWindow(QMainWindow):
         self.random_pick.clicked.connect(self.show_random_film)
     
     def show_new_film(self):
-        print("Создаю новый фильм")
+        self.new_film = NewFilm()
+        self.new_film.show()
+    
     
     def show_library(self):
         print("Показываю список фильмов")
+
 
     def show_random_film(self):
         print("Показываю случайный фильм")
