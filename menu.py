@@ -1,6 +1,8 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget
 from new_film import NewFilm
+from library import FilmLibraryWindow
+from random_film import RandomFilmWindow
 
 class MenuWindow(QMainWindow):
     def __init__(self):
@@ -31,11 +33,13 @@ class MenuWindow(QMainWindow):
     
     
     def show_library(self):
-        print("Показываю список фильмов")
+        self.library_window = FilmLibraryWindow()
+        self.library_window.show()
 
 
     def show_random_film(self):
-        print("Показываю случайный фильм")
+        self.random_window = RandomFilmWindow()
+        self.random_window.show()
     
 
 if __name__ == "__main__":
