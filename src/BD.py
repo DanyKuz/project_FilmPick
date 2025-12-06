@@ -3,7 +3,7 @@ import os
 from datetime import date
 
 class FilmDB:
-    def __init__(self, db_path="films.db"):
+    def __init__(self, db_path="data/films.db"):
         self.db_path = db_path
         self.init_database()
 
