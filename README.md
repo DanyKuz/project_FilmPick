@@ -21,7 +21,7 @@
 
 ## Пример оформления
 
-![alt text](image-1.png)
+![alt text](data/primer_interface/image-1.png)
 
 ### Главное окно (MENU)
 Содержит следующие кнопки:
