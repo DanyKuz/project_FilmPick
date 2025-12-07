@@ -75,9 +75,9 @@ class NewFilm(QMainWindow):
             self.selected_cover = filename
             self.cover_path_label.setText(filename)
 
-            os.makedirs("covers", exist_ok=True)
+            os.makedirs("data/save_covers", exist_ok=True)
 
-            dest_path = os.path.join("covers", filename)
+            dest_path = os.path.join("data/save_covers", filename)
             try:
                 with open(file_path, "rb") as src, open(dest_path, "wb") as dst:
                     dst.write(src.read())

@@ -71,7 +71,7 @@ class FilmLibraryWindow(QWidget):
             cover_label.setFixedSize(140, 200)
 
             if cover_filename:
-                cover_path = os.path.join("covers", cover_filename)
+                cover_path = os.path.join("data/save_covers", cover_filename)
                 if os.path.exists(cover_path):
                     pixmap = QPixmap(cover_path)
                     if not pixmap.isNull():
