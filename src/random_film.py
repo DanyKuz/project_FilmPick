@@ -90,7 +90,7 @@ class RandomFilmWindow(QMainWindow):
 
         self.cover_label.clear()
         if cover:
-            cover_path = os.path.join("covers", cover)
+            cover_path = os.path.join("data/covers", cover)
             if os.path.exists(cover_path):
                 pixmap = QPixmap(cover_path)
                 if not pixmap.isNull():
